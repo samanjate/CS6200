@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+TASK 1
+-------------------------------------------------------------------------------
+This retrieval model uses lucene, its analyzer and query parser.
+The java program gives the page rank score with the page names,
+The python scripts then takes this output and replaces the page names to 
+document IDs as given in the document to document IDs map in Docs.txt file.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+TASK 2
+-------------------------------------------------------------------------------
+This retrieval model uses the vector space cosine similarity model.
+It uses the formulas as shown in the screen shot that can be found in the folder.
+The tf-idf score is then calculated using this formula.
+It first loads the inverted index and the calculates the tf-idf
+score for each of the query term that is present in the corpus. Similarly it
+calculates the tf-idf score for each document for each term that is present, in
+the query.
+The dot-product of these two vectors is then stores in a dictionary.
+
+To normalize this score that is calculated, the document weight for each term
+in the corpus is then calculated. And similarly for query terms. The square of
+summation of both is taken. Then the  square root of the product of the two
+results is then divided the the dot-product of the first two vectors.
+This gives the final score.
+-------------------------------------------------------------------------------

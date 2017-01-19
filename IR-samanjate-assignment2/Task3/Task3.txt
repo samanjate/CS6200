@@ -1,0 +1,55 @@
+------------------------------------------------------------
+Top 5 pages with maximum in-links
+Page : Number of in-links
+------------------------------------------------------------
+G1
+------------------------------------------------------------
+International_Standard_Book_Number : 479
+Digital_object_identifier : 452
+Renewable_energy : 414
+Efficient_enery_use : 284
+United_States : 252
+------------------------------------------------------------
+G2
+------------------------------------------------------------
+WT21-B37-76 : 2568
+WT18-B29-37 : 2269
+WT01-B18-225 : 2260
+WT23-B27-29 : 1940
+WT21-B37-75 : 1704
+------------------------------------------------------------
+Top 5 ranked pages
+Page : PR score
+------------------------------------------------------------
+G1
+------------------------------------------------------------
+Digital_object_identifier : 0.0336708854316
+Integrated_Authority_File : 0.0274579809084
+International_Standard_Book_Number : 0.0259128415068
+United_States : 0.0162065092625
+Wayback_Machine : 0.0144174836052
+------------------------------------------------------------
+G2
+------------------------------------------------------------
+WT21-B37-76 : 0.00267940942721
+WT21-B37-75 : 0.00152591664384
+WT25-B39-116 : 0.00146949473347
+WT23-B21-53 : 0.00137232346352
+WT24-B40-171 : 0.00124499876031
+------------------------------------------------------------
+------------------------------------------------------------
+
+Our algorithm has:
+
+foreach	page	q	in	M(p) /*	pages	pointing	to	p	*/
+    newPR(p)	+=	d*PR(q)/L(q)	/*	add	share	of	PageRank	from	in-links	*/
+
+Hence, the more the in-links a page has, the more number of iterations that
+page will have for its 'for' loop and the there will be more increments in its
+PR score. Thus, we see that in-links play a major role in the final PR score.
+
+We can also see that the more number of out-links a page has, the lesser
+increment in the PR score it will have for each iteration. Thus, we can see that
+number of in-links are affecting the PR score more than the number of out-links.
+
+------------------------------------------------------------

@@ -1,0 +1,54 @@
+Since both of the program runs are independent of each other, we cannot
+determine the exact importance of either of them over the other. Hence, we
+would give equal importance to both of them.
+
+For minimal loss of information, we can check for duplicate data in the two
+lists and keep only one instance of the duplicate data. Since, the duplicate
+data appeared in both files, this will be kept in the merged file as well.
+
+The problem statement in the first question states that the URLs at a
+shallower depth are considered to be more important than those at a deeper depth
+than them, and they must be crawled first. Thus, the results of the two
+independent lists will have important URLs crawled first and they will appear
+earlier in the list.
+
+We can then divide the remaining space (we have already added one instance of
+the duplicate data) into two, and allocate them to the top URLs of the two lists
+alternatively.
+
+For example:
+List 1
+https://en.wikipedia.org/wiki/Sustainable_energy
+https://en.wikipedia.org/wiki/Greenpower
+https://en.wikipedia.org/wiki/Energy_conservation
+https://en.wikipedia.org/wiki/Cogeneration
+https://en.wikipedia.org/wiki/Hong_Kong
+https://en.wikipedia.org/wiki/Green_building
+https://en.wikipedia.org/wiki/Geothermal_heat_pump
+https://en.wikipedia.org/wiki/Low-carbon_power
+https://en.wikipedia.org/wiki/Microgeneration
+https://en.wikipedia.org/wiki/Passive_solar_building_design
+
+List 2
+https://en.wikipedia.org/wiki/Solar_power
+https://en.wikipedia.org/wiki/Solar_energy
+https://en.wikipedia.org/wiki/Solar_luminosity
+https://en.wikipedia.org/wiki/Solar_PV
+https://en.wikipedia.org/wiki/Hong_Kong
+https://en.wikipedia.org/wiki/Concentrated_solar_power
+https://en.wikipedia.org/wiki/Solnova_Solar_Power_Station
+https://en.wikipedia.org/wiki/Microgeneration
+https://en.wikipedia.org/wiki/PS20
+https://en.wikipedia.org/wiki/Primary_energy
+
+Merged list
+https://en.wikipedia.org/wiki/Hong_Kong
+https://en.wikipedia.org/wiki/Microgeneration
+https://en.wikipedia.org/wiki/Sustainable_energy
+https://en.wikipedia.org/wiki/Solar_power
+https://en.wikipedia.org/wiki/Greenpower
+https://en.wikipedia.org/wiki/Solar_energy
+https://en.wikipedia.org/wiki/Energy_conservation
+https://en.wikipedia.org/wiki/Solar_luminosity
+https://en.wikipedia.org/wiki/Cogeneration
+https://en.wikipedia.org/wiki/Solar_PV

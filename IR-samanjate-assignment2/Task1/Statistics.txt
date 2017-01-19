@@ -1,0 +1,13 @@
+G1:
+
+(a) pages with no in-links : 0
+    proportion - 0/1000 = 0
+(b) number of sink nodes : 11
+    proportion - 11/1000 = 0.011
+
+G2:
+
+(a) pages with no in-links : 14350
+    proportion - 14350/183811 = 0.078
+(b) number of sink nodes : 66175
+    proportion - 66175/183811 = 0.36

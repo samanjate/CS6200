@@ -1,0 +1,49 @@
+Top 5 URLs from Depth First Crawling
+https://en.wikipedia.org/wiki/Sustainable_energy
+https://en.wikipedia.org/wiki/Passive_solar_building_design
+https://en.wikipedia.org/wiki/Solar_energy
+https://en.wikipedia.org/wiki/Solar_Energy_(journal)
+https://en.wikipedia.org/wiki/Solar_heating
+
+Top 5 URLs from Breadth First Crawling
+https://en.wikipedia.org/wiki/Sustainable_energy
+https://en.wikipedia.org/wiki/Passive_solar_building_design
+https://en.wikipedia.org/wiki/Solar_energy
+https://en.wikipedia.org/wiki/Solar_heating
+https://en.wikipedia.org/wiki/Solar_photovoltaics
+
+Working:-
+
+Breath First crawling:
+This crawls the parent node, saves the URLs in a list and considers the URLs
+that appeared first to me more important than those which appear later. Hence
+all URLs at the same depth are crawled and then the next depth is reached.
+
+Depth First crawling:
+This skips the URLs at a shallower depth and halts at the maximum depth limit
+(in this case 5), crawls all URLs at depth 5 then returns to 4 and then crawls
+the next children of 4 at depth 5 till all URLs at depth 5 are crawled and
+returns to 4. This happens recursively till parent node.
+
+Observations:-
+
+Breath First crawling:
+1. The algorithm takes about 6 mins to run.
+2. It was able to gather 1000 unique URLs before the depth 5 was reached
+3. 1000 unique URLs were found till depth 2
+
+Depth First crawling:
+1. Algorithm takes about 4 mins to run,
+2. Was not able to gather 1000 unique URLs (halted at 767 URLs)
+
+From the above observations we can see that even though dfs is a faster
+algorithm, it might skip the valuable information the user was searching for in
+the first place. We can correct this by maybe increasing the depth limit till
+we search for the required piece of information.
+Thus, bfs algorithm is a more comprehensive crawling method as all the nodes at
+the a depth shallower are crawled first and they are considered to be more
+important than the URLs deeper than them. On the other hand we can look for
+specific data much faster using dfs by skipping crawling pages at shallower
+depth.
+
+Another interesting point to note is that dfs here halts at 767. This probably happened because of the uniqueness condition. Hence, we could say that we are finding redundant data in dfs.
