@@ -1,4 +1,3 @@
-# CS5100
+# Foundation of Artificial Intelligence
 
-Foundation of Artificial Intelligence, Spring 2018
-Northeastern University
+Homework submissions for CS5100 at NEU for the Spring of 2018.

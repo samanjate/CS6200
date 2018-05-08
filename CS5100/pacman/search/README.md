@@ -1,4 +1,4 @@
-# Homework	1:	Search	in	Pacman
+# Search	in	Pacman
 
 ## Introduction
 
